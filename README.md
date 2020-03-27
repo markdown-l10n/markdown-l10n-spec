@@ -64,4 +64,13 @@ Documentation in multiple languages makes the information available to wider aud
 * Remove Locale - remove all localized files for specific Locale
 
 # Implementations
-* [Markdown Localization Manager (Bash)](https://github.com/markdown-l10n/mdlm-sh)
+| Operation            | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
+| -------------------- | ------------------------------------------------------- |
+| List Locales         | :heavy_check_mark:                                      |
+| Add New Locale       | :heavy_check_mark:                                      |
+| Add translation *    | :x:                                                     |
+| Sync Status          | :heavy_check_mark:                                      |
+| Sync                 | :heavy_check_mark:                                      |
+| Update translation * | :x:                                                     |
+
+\* if this operation is not implemented, it is supposed to be performed manually.
