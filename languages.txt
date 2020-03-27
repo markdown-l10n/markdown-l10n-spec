@@ -68,7 +68,7 @@ ie|Interlingue|Interlingue
 ig|Igbo|Igbo
 ii|四川彝语|Sichuan Yi
 ik|Iñupiak|Inupiaq
-in|in|Indonesian
+in|bahasa Indonesia|Indonesian
 io|Ido|Ido
 is|Íslenska|Icelandic
 it|Italiano|Italian
