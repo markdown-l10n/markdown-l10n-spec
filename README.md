@@ -81,3 +81,16 @@ Localized document version `README-ru.md`:
 | Update translation * | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
+
+# Credits
+
+Sources for [languages](languages.txt) and their native translations:
+* https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+* https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
+
+# Contributing
+
+All contributions are welcome:
+* Specification - proposals for updates and additions
+* Language tags and names - add language, update native name of the language
+* Localization of this document
