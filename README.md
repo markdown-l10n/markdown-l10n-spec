@@ -3,13 +3,16 @@
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
 
+Example of original and localized files:
+* Nested [Example](example/README.md) localization
+
 ## Motivation
 
 Comprehensive documentation is important for distributed projects.
 Documentation in multiple languages makes the information available to wider audience.
 There are volunteers, who can and want to contribute with localization.
-However:
-Markdown markaup does not support localization.
+
+However, Markdown markaup does not support localization.
 There is no process to chunk doc in pieces to facilitate iterative collaborative document update.
 As soon as a original document is updated, all localizations can become outdated.
 
@@ -70,7 +73,3 @@ Localized document version `README-ru.md`:
 | Update translation * | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
-
-# Examples
-
-* Nested [Example](example/README.md) localization
