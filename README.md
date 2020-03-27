@@ -34,14 +34,31 @@ Create utility to:
 Header serves as a switcher between all localizations of the file.
 `@l10n:h` in the same line as the header, has links to all localizations.
 Example:
+```markdown
+[English](README.md) | **[Русский](README-ru.md)** | *[Add](/CONTRIBUTING.md#localization)* <!-- @l10n:h -->
+```
 
 ### Paragraphs
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 Example:
 Original document `README.md`:
+```markdown
+## Example A
 
+Here is a text of example.
+```
 Localized document version `README-ru.md`:
+```markdown
+<!-- @l10n:p
+## Example A
+
+Here is a text of example.
+@l10n:p -->
+## Пример А
+
+Здесь находится текст примера.
+```
 
 # Workflow
 
