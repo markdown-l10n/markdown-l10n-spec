@@ -12,7 +12,7 @@ Comprehensive documentation is important for distributed projects.
 Documentation in multiple languages makes the information available to wider audience.
 There are volunteers, who can and want to contribute with localization.
 
-However, Markdown markaup does not support localization.
+However, Markdown markup does not support localization.
 There is no process to chunk doc in pieces to facilitate iterative collaborative document update.
 As soon as a original document is updated, all localizations can become outdated.
 
@@ -31,14 +31,16 @@ Create utility to:
 
 ### Localization Header
 
-Header serves as a switcher between all localizations of the file.
-`@l10n:h` in the same line as the header, has links to all localizations.
+`@l10n:h` Header serves as a switcher between all localizations of the file.
+
 Example:
+
 ![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
 
 ### Paragraphs
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
+
 Example:
 
 Original document `README.md`:
@@ -54,13 +56,13 @@ Localized document version `README-ru.md`:
 ## Add new Locale
 
 * List Available Locales
-* Add New Locale - add localized version for all file and update headers to have links to these files
+* Add New Locale - add localized version for all files and update headers to have links to these files
 * Add translation
 
 ## Sync Locale
 
-* Sync Status, optionally with list of differences
-* Sync commented paragraphs in localized documents with updated paragraphs from original document.
+* Check Sync Status, optionally with list of differences
+* Sync commented paragraphs in localized documents with updated paragraphs from original document
 * Update translation
 
 ## Remove Locale
@@ -74,8 +76,8 @@ Localized document version `README-ru.md`:
 | List Locales         | :heavy_check_mark:                                      |
 | Add New Locale       | :heavy_check_mark:                                      |
 | Add translation *    | :x:                                                     |
-| Sync Status          | :heavy_check_mark:                                      |
-| Sync                 | :heavy_check_mark:                                      |
+| Check Sync Status    | :heavy_check_mark:                                      |
+| Sync                 | :x:                                                     |
 | Update translation * | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
