@@ -163,7 +163,7 @@ Each original document is logically split into paragraphs delimited by headers. 
 | Add New Locale       | :heavy_check_mark:                                      |
 | Add translation *    | :x:                                                     |
 | Check Sync Status    | :heavy_check_mark:                                      |
-| Sync                 | :x:                                                     |
+| Sync *               | :x:                                                     |
 | Update translation * | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
@@ -176,7 +176,7 @@ Each original document is logically split into paragraphs delimited by headers. 
 | Добавить новую Локаль         | :heavy_check_mark:                                      |
 | Добавить перевод *            | :x:                                                     |
 | Получить статус синхронизации | :heavy_check_mark:                                      |
-| Синхронизировать              | :x:                                                     |
+| Синхронизировать *            | :x:                                                     |
 | Обновить перевод *            | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.

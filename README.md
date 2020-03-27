@@ -77,7 +77,7 @@ Localized document version `README-ru.md`:
 | Add New Locale       | :heavy_check_mark:                                      |
 | Add translation *    | :x:                                                     |
 | Check Sync Status    | :heavy_check_mark:                                      |
-| Sync                 | :x:                                                     |
+| Sync *               | :x:                                                     |
 | Update translation * | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
