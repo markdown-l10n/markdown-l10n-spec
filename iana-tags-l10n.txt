@@ -11,8 +11,8 @@ av|av|Avaric
 ay|ay|Aymara
 az|az|Azerbaijani
 ba|ba|Bashkir
-be|be|Belarusian
-bg|bg|Bulgarian
+be|Беларуская|Belarusian
+bg|Български|Bulgarian
 bh|bh|Bihari languages
 bi|bi|Bislama
 bm|bm|Bambara
@@ -25,7 +25,7 @@ ce|ce|Chechen
 ch|ch|Chamorro
 co|co|Corsican
 cr|cr|Cree
-cs|cs|Czech
+cs|Čeština|Czech
 cu|cu|Church Slavic
 cv|cv|Chuvash
 cy|cy|Welsh
@@ -37,20 +37,21 @@ ee|ee|Ewe
 el|el|Modern Greek (1453-)
 en|English|English
 eo|eo|Esperanto
-es|es|Spanish
+es|Español|Spanish
 et|et|Estonian
 eu|eu|Basque
-fa|fa|Persian
+fa|فارسی|Persian
 ff|ff|Fulah
 fi|fi|Finnish
 fj|fj|Fijian
 fo|fo|Faroese
-fr|fr|French
+fr|Français|French
 fy|fy|Western Frisian
 ga|ga|Irish
 gd|gd|Scottish Gaelic
 gl|gl|Galician
 gn|gn|Guarani
+gr|Ελληνικά|Greek
 gu|gu|Gujarati
 gv|gv|Manx
 ha|ha|Hausa
@@ -86,7 +87,7 @@ kk|kk|Kazakh
 kl|kl|Kalaallisut
 km|km|Khmer
 kn|kn|Kannada
-ko|ko|Korean
+ko|한국어|Korean
 kr|kr|Kanuri
 ks|ks|Kashmiri
 ku|ku|Kurdish
@@ -105,7 +106,7 @@ lv|lv|Latvian
 mg|mg|Malagasy
 mh|mh|Marshallese
 mi|mi|Maori
-mk|mk|Macedonian
+mk|Македонски|Macedonian
 ml|ml|Malayalam
 mn|mn|Mongolian
 mo|mo|Moldavian
@@ -133,7 +134,7 @@ pa|pa|Panjabi
 pi|pi|Pali
 pl|pl|Polish
 ps|ps|Pushto
-pt|pt|Portuguese
+pt|Português|Portuguese
 qu|qu|Quechua
 rm|rm|Romansh
 rn|rn|Rundi
@@ -148,16 +149,16 @@ sg|sg|Sango
 sh|sh|Serbo-Croatian
 si|si|Sinhala
 sk|sk|Slovak
-sl|sl|Slovenian
+sl|Slovenščina|Slovenian
 sm|sm|Samoan
 sn|sn|Shona
 so|so|Somali
 sq|sq|Albanian
-sr|sr|Serbian
+sr|Српски|Serbian
 ss|ss|Swati
 st|st|Southern Sotho
 su|su|Sundanese
-sv|sv|Swedish
+sv|Svenska|Swedish
 sw|sw|Swahili (macrolanguage)
 ta|ta|Tamil
 te|te|Telugu
@@ -168,15 +169,15 @@ tk|tk|Turkmen
 tl|tl|Tagalog
 tn|tn|Tswana
 to|to|Tonga (Tonga Islands)
-tr|tr|Turkish
+tr|Türkçe|Turkish
 ts|ts|Tsonga
 tt|tt|Tatar
 tw|tw|Twi
 ty|ty|Tahitian
 ug|ug|Uighur
-uk|uk|Ukrainian
+uk|Українська|Ukrainian
 ur|ur|Urdu
-uz|uz|Uzbek
+uz|Ўзбекча|Uzbek
 ve|ve|Venda
 vi|vi|Vietnamese
 vo|vo|Volapük
@@ -186,7 +187,7 @@ xh|xh|Xhosa
 yi|yi|Yiddish
 yo|yo|Yoruba
 za|za|Zhuang
-zh|zh|Chinese
+zh|简体中文|Chinese
 zu|zu|Zulu
 az-Arab|az-Arab|Azerbaijani in Arabic script
 az-Cyrl|az-Cyrl|Azerbaijani in Cyrillic script
