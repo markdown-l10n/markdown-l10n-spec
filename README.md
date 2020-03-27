@@ -21,15 +21,16 @@ Create utility to:
 * show the difference between original and localized document
 
 ## Structure
-# Localization Header
+### Localization Header
+Header serves as a switcher between all localizations of the file.
 `@l10n:h` in the same line as the header, has links to all localizations.
 Example:
 ```
 **[English](README.md)** | [Deutsch](README-de.md) | [Русский](README-ru.md) | *[Add](/CONTRIBUTING.md#localization)* <!-- @l10n:h -->
 ```
 
-# Paragraphs
-`@l10n:p` added to the start and and of the paragraph comment.
+### Paragraphs
+Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 Example:
 Original document `README.md`:
 ```
@@ -47,7 +48,20 @@ Documentation in multiple languages makes the information available to wider aud
 Документация на разных языках делает информацию доступной для более широкой аудитории.
 ```
 
-## Methods
+# Workflow
+
+## Add new Locale
 * List Available Locales
-* Add New Locale
+* Add New Locale - add localized version for all file and update headers to have links to these files
+* Add translation
+
+## Sync Locale
 * Sync Status, optionally with list of differences
+* Sync commented paragraphs in localized documents with updated paragraphs from original document.
+* Update translation
+
+## Remove Locale
+* Remove Locale - remove all localized files for specific Locale
+
+# Implementations
+* [Markdown Localization Manager (Bash)](https://github.com/markdown-l10n/mdlm-sh)
