@@ -52,7 +52,7 @@ Localized document version `README-ru.md`:
 
 ![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
 
-# Workflow
+# Operations
 
 ## Add new Locale
 
@@ -69,6 +69,24 @@ Localized document version `README-ru.md`:
 ## Remove Locale
 
 * Remove Locale - remove all localized files for specific Locale
+
+# Workflow
+
+1. Create file
+Use the same name, as original file has. Add a suffix for the supported locale. Example: Original - `README.md`, Localized - `README-it.md`.
+
+2. Copy original content
+Copy the contents of the original file to a localized file. Put all paragrapgs, delimited by headers into comments with `@l10n:p` annotations.
+More details about localization pagraphs and annotations are available [here](https://github.com/markdown-l10n/markdown-l10n-spec#localization-header).
+
+3. Update headers.
+Update the header of the original file to include a link to a new localization file.
+Update headers of other localization files to include a link to a new localization.
+More details about localization pagraphs and annotations are available [here](https://github.com/markdown-l10n/markdown-l10n-spec#paragraphs).
+
+4. Translate.
+Keep original paragraphs in comments.
+Add translations as additional paragraphs.
 
 # Implementations
 
@@ -95,3 +113,5 @@ All contributions are welcome:
 * Specification - proposals for updates and additions
 * Language tags and names - add language, update native name of the language
 * Localization of this document
+
+Check [CONTRIBUTING.md](../CONTRIBUTING.md)
