@@ -1,4 +1,4 @@
-[English](README.md) | **[Русский](README-ru.md)** | *[Add](/CONTRIBUTING.md#localization)* <!-- @l10n:h -->
+[English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 <!-- @l10n:p
 # Markdown Localization - (Micro) Specification
 

@@ -1,4 +1,4 @@
-**[English](README.md)** | [Русский](README-ru.md) | *[Add](/CONTRIBUTING.md#localization)* <!-- @l10n:h -->
+**[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 # Markdown Localization - (Micro) Specification
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
