@@ -3,16 +3,19 @@
 # Markdown Localization - (Micro) Specification
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
-
-Example of original and localized files:
-* Nested [Example](example/README.md) localization
 @l10n:p -->
 # Локализация Markdown - (Микро) Спецификация
 
 Добавляется расширение ориганальной разметки в виде аннотацией в комментариях в форме `@namespace:annotation`, например: `@l10n:h`.
 
-Пример исходного и локализованного файлов:
-* Вложенный [Пример](example/README.md) локализации
+<!-- @l10n:p
+## Example
+Example of original file with multiple locization:
+* [example/README.md](example/README.md)
+@l10n:p -->
+## Пример
+Пример исходного файла с несколькими локализациями:
+* [example/README.md](example/README.md)
 
 <!-- @l10n:p
 ## Motivation
