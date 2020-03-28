@@ -1,5 +1,4 @@
 [English](README.md) | **[Русский](README-ru.md)** | *[Add](/CONTRIBUTING.md#localization)* <!-- @l10n:h -->
-
 <!-- @l10n:p
 # Markdown Localization - (Micro) Specification
 
@@ -181,3 +180,30 @@ Each original document is logically split into paragraphs delimited by headers. 
 
 \* if this operation is not implemented, it is supposed to be performed manually.
 
+<!-- @l10n:p
+# Credits
+
+Sources for [languages](languages.txt) and their native translations:
+* https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+* https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
+@l10n:p -->
+# Благодарность
+
+Источники названия [языков](languages.txt) и их переводов на родной язык:
+* https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+* https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
+
+<!-- @l10n:p
+# Contributing
+
+All contributions are welcome:
+* Specification - proposals for updates and additions
+* Language tags and names - add language, update native name of the language
+* Localization of this document
+@l10n:p -->
+# Содействие
+
+Приветствуется любое содействие:
+* Спецификация - предложения по обновлению и добавлению новых элементов
+* Тэги и названия языков - добавить язык, обновить название языка на этом языке
+* Локализация этого документа
