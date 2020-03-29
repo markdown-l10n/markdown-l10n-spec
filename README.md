@@ -1,6 +1,8 @@
 **[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 
+<!-- @l10n:ignore start -->
 ![l10n-sync](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync/badge.svg)
+<!-- @l10n:ignore end -->
 
 # Markdown Localization - (Micro) Specification
 
@@ -84,7 +86,11 @@ It may be helpful to introduce separate localization project for every localizat
 
 # Structure
 
-## Localization Header
+- [Header](#header)
+- [Paragraphs](#paragraphs)
+- [Ignore](#ignore)
+
+## Header
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
@@ -105,6 +111,10 @@ Original document `README.md`:
 Localized document version `README-ru.md`:
 
 ![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
+
+## Ignore
+
+Use `@l10n:ignore` annotation to exclude paragraphs of original document from synchronization status check. Mark the beginning with `@l10n:ignore start` and the end with `@l10n:ignore end`.
 
 # Operations
 

@@ -1,6 +1,8 @@
 [English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 
+<!-- @l10n:ignore start -->
 ![l10n-sync-ru](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync-ru/badge.svg)
+<!-- @l10n:ignore end -->
 
 <!-- @l10n:p
 # Markdown Localization - (Micro) Specification
@@ -179,7 +181,7 @@ It may be helpful to introduce separate localization project for every localizat
 ## Структура
 
 <!-- @l10n:p
-## Localization Header
+## Header
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
@@ -187,7 +189,7 @@ Example:
 
 ![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
 @l10n:p -->
-### Локализационный заголовок
+### Заголовок
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
