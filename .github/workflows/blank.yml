@@ -32,9 +32,5 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Check localization status
       run: |
+        export TERM=xterm-256color
         $HOME/.mdlm/mdlm.sh status --diff
-
-    # Runs a set of commands using the runners shell
-    - name: Check terminfo
-      run: |
-        toe -a
