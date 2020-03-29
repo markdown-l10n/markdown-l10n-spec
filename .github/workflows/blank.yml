@@ -25,9 +25,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Setup mdlm
       run: |
+        export TERM=xterm-256color
         curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.6/install.sh | bash
-        echo $SHELL
-        ls -la ~
         $HOME/.mdlm/mdlm.sh
 
     # Runs a set of commands using the runners shell
