@@ -3,10 +3,6 @@
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
 
-## Example
-Example of original file with multiple locization:
-* [example/README.md](example/README.md)
-
 ## Motivation
 
 Comprehensive documentation is important for distributed projects.
@@ -30,25 +26,58 @@ Create utility to:
 
 # Workflow
 
+## Add new locale
+
 1. **Create new file.** 
 * Use the same name, as original file has.
 * Add a suffix for the supported locale.
 * Example: Original - `README.md`, Localized - `README-it.md`.
+
 2. **Copy original file content.**
 * Copy the contents of the original file to a localized file.
 * Put all paragrapgs, delimited by headers into comments with `@l10n:p` annotations.
-* More details about localization pagraphs and annotations are available [here](https://github.com/markdown-l10n/markdown-l10n-spec#localization-header).
+
 3. **Update headers.**
-* Update the header of the original file to include a link to a new localization file.
-* Update headers of other localization files to include a link to a new localization.
-* More details about localization pagraphs and annotations are available [here](https://github.com/markdown-l10n/markdown-l10n-spec#paragraphs).
+* Update the header of the original file and other localization files to include a link to a new localization file.
+
 4. **Translate.**
-* Keep original paragraphs in comments.
-* Add translations as additional paragraphs.
+* Add translations as separate paragraphs to match the structure of original file.
 
-## Structure
+## Update localized files
 
-### Localization Header
+1. **Check sync status**
+* Check which paragraphs were added or updated in original file.
+
+2. **Update translation.**
+* Update original paragraphs in the commented section of localized files.
+* Update translations in localized files to match original paragraphs
+
+## Workflow automation with MDLM
+
+Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+
+### Add new locale
+
+```sh
+$ mdlm ls # find locale name
+$ mdlm add fr # create new files, copy original file content, update headers.
+```
+Now files are created and ready for translation.
+
+### Update localized files
+
+```sh
+$ mdlm status --diff # check sync status and see the difference between original and localized files.
+```
+Based on the differences, for each localized file update orignal sections in comments and translation paragraphs.
+
+## Example
+Example of original file with multiple locization:
+* [example/README.md](example/README.md)
+
+# Structure
+
+## Localization Header
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
@@ -56,7 +85,7 @@ Example:
 
 ![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
 
-### Paragraphs
+## Paragraphs
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 
@@ -86,7 +115,7 @@ Localized document version `README-ru.md`:
 
 ## Remove Locale
 
-* Remove Locale - remove all localized files for specific Locale
+* Remove Locale - remove all localized files for specific Locale and links from headers of other files
 
 # Implementations
 
@@ -98,6 +127,7 @@ Localized document version `README-ru.md`:
 | Check Sync Status    | :heavy_check_mark:                                      |
 | Sync *               | :x:                                                     |
 | Update translation * | :x:                                                     |
+| Remove Locale        | :heavy_check_mark:                                      |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
 
@@ -113,5 +143,4 @@ All contributions are welcome:
 * Specification - proposals for updates and additions
 * Language tags and names - add language, update native name of the language
 * Localization of this document
-
-Check [CONTRIBUTING.md](../CONTRIBUTING.md)
+* Creating new automations (Python, JavaScript, etc.)
