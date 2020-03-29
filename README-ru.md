@@ -307,7 +307,7 @@ Sources for [languages](languages.txt) and their native translations:
 * https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
 
 <!-- @l10n:p
-# Contributin
+# Contributing
 
 All contributions are welcome:
 * Specification - proposals for updates and additions
