@@ -27,8 +27,7 @@ jobs:
       run: |
         curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.6/install.sh | bash
         echo $SHELL
-        cat .bashrc
-        cat .bash_profile
+        ls -la ~
         $HOME/.mdlm/mdlm.sh
 
     # Runs a set of commands using the runners shell
