@@ -34,3 +34,10 @@ jobs:
     - name: Check localization status
       run: |
         $HOME/.mdlm/mdlm.sh status --diff
+
+    # Runs a set of commands using the runners shell
+    - name: Check terminfo
+      run: |
+        infocmp
+        infocmp -D
+        toe -a
