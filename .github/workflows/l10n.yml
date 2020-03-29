@@ -1,0 +1,43 @@
+name: l10n
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  sync-status:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Download mdlm
+      run: |
+        curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.7/install.sh | bash
+
+    - name: Sync status - ar
+      run: |
+        export TERM=xterm-256color
+        $HOME/.mdlm/mdlm.sh status ar --diff
+
+    - name: Sync status - es
+      run: |
+        export TERM=xterm-256color
+        $HOME/.mdlm/mdlm.sh status es --diff
+
+      - name: Sync status - fr
+      run: |
+        export TERM=xterm-256color
+        $HOME/.mdlm/mdlm.sh status fr --diff
+
+      - name: Sync status - ru
+      run: |
+        export TERM=xterm-256color
+        $HOME/.mdlm/mdlm.sh status ru --diff
+  
+      - name: Sync status - Chinese
+      run: |
+        export TERM=xterm-256color
+        $HOME/.mdlm/mdlm.sh status zh-Hans --diff

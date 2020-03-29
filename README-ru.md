@@ -162,6 +162,15 @@ Example of original file with multiple locization:
 * [example/README.md](example/README.md)
 
 <!-- @l10n:p
+## Managing worklfow with Github Projects
+
+It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+@l10n:p -->
+## Управление рабочий процессом с помощью Github Projects
+
+Для каждой локализации можно создать отдельный проект. Например, как [здесь](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+
+<!-- @l10n:p
 # Structure
 @l10n:p -->
 ## Структура
@@ -298,7 +307,7 @@ Sources for [languages](languages.txt) and their native translations:
 * https://meta.wikimedia.org/wiki/Template:List_of_language_names_ordered_by_code
 
 <!-- @l10n:p
-# Contributing
+# Contributin
 
 All contributions are welcome:
 * Specification - proposals for updates and additions
