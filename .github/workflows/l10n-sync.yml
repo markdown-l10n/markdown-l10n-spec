@@ -1,4 +1,4 @@
-name: l10n
+name: l10n-sync
 
 on:
   push:
