@@ -1,4 +1,7 @@
 [English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
+
+![l10n](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n/badge.svg)
+
 <!-- @l10n:p
 # Markdown Localization - (Micro) Specification
 
@@ -160,6 +163,15 @@ Example of original file with multiple locization:
 ## Пример
 Пример исходного файла с несколькими локализациями:
 * [example/README.md](example/README.md)
+
+<!-- @l10n:p
+## Managing worklfow with Github Projects
+
+It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+@l10n:p -->
+## Управление рабочий процессом с помощью Github Projects
+
+Для каждой локализации можно создать отдельный проект. Например, как [здесь](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
 
 <!-- @l10n:p
 # Structure
