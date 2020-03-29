@@ -25,11 +25,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: Setup mdlm
       run: |
-        curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.6/install.sh | bash
+        curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.7/install.sh | bash
 
     # Runs a set of commands using the runners shell
     - name: Check localization status
       run: |
         export TERM=xterm-256color
         $HOME/.mdlm/mdlm.sh status --diff
-        mdlm version
