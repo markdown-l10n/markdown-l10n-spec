@@ -1,9 +1,5 @@
 **[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 
-<!-- @l10n:ignore start -->
-![l10n-sync](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync/badge.svg)
-<!-- @l10n:ignore end -->
-
 # Markdown Localization - (Micro) Specification
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
@@ -94,7 +90,7 @@ It may be helpful to introduce separate localization project for every localizat
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
-Example:
+Example from [example/README.md](example/README-es.md):
 
 ![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
 
@@ -102,19 +98,19 @@ Example:
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 
-Example:
-
-Original document `README.md`:
+Example of original document [example/README.md](example/README.md):
 
 ![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-original.png)
 
-Localized document version `README-ru.md`:
+Localized document version [example/README-fr.md](example/README-fr.md):
 
 ![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
 
 ## Ignore
 
-Use `@l10n:ignore` annotation to exclude paragraphs of original document from synchronization status check. Mark the beginning with `@l10n:ignore start` and the end with `@l10n:ignore end`.
+Use `@l10n:ignore` annotation to exclude content of original and localized documents from synchronization status check. Mark the beginning with `@l10n:ignore start` and the end with `@l10n:ignore end`. Example from [example/README-ru.md](example/README-ru.md):
+
+![Localization Ingore Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-ignore.png)
 
 # Operations
 
