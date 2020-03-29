@@ -9,15 +9,6 @@ Introducing extension of the original markup format with annotations in comments
 Добавляется расширение ориганальной разметки в виде аннотацией в комментариях в форме `@namespace:annotation`, например: `@l10n:h`.
 
 <!-- @l10n:p
-## Example
-Example of original file with multiple locization:
-* [example/README.md](example/README.md)
-@l10n:p -->
-## Пример
-Пример исходного файла с несколькими локализациями:
-* [example/README.md](example/README.md)
-
-<!-- @l10n:p
 ## Motivation
 
 Comprehensive documentation is important for distributed projects.
@@ -62,12 +53,121 @@ Create utility to:
 * показать разницу между оригинальным и локализованным документом
 
 <!-- @l10n:p
-## Structure
+# Workflow
+@l10n:p -->
+# Рабочий процесс
+
+<!-- @l10n:p
+## Add new locale
+
+1. **Create new file.** 
+* Use the same name, as original file has.
+* Add a suffix for the supported locale.
+* Example: Original - `README.md`, Localized - `README-it.md`.
+
+2. **Copy original file content.**
+* Copy the contents of the original file to a localized file.
+* Put all paragrapgs, delimited by headers into comments with `@l10n:p` annotations.
+
+3. **Update headers.**
+* Update the header of the original file and other localization files to include a link to a new localization file.
+
+4. **Translate.**
+* Add translations as separate paragraphs to match the structure of original file.
+@l10n:p -->
+## Добавление новой локали
+
+1. **Создайте новый файл.**
+* Используйте имя файла такое же, как у исходного файла.
+* В конце имени добавьте суффикс локали.
+* Пример: Исходный файл - `README.md`, локализованный - `README-it.md`.
+
+2. **Скопируйте содержимое исходного файла.**
+* Скопируйте содержимое исходного файла в локализованный файл.
+* Все параграфы исходного файла комментируются отдельно и помечаются аннотацией `@l10n:p`.
+
+3. **Обновите заголовки.**
+* В исходном файле и других локализованных файлах добавьте ссылку на созданный локализованный файл.
+
+4. **Сделайте перевод.**
+* Добавьте перевод как отдельные параграфы в соответствии со структурой исходного файла.
+
+<!-- @l10n:p
+## Update localized files
+
+1. **Check sync status**
+* Check which paragraphs were added or updated in original file.
+
+2. **Update translation.**
+* Update original paragraphs in the commented section of localized files.
+* Update translations in localized files to match original paragraphs
+@l10n:p -->
+## Обновление локализованных файлов
+
+1. **Проверить состояние синхронизиции.**
+*  Проверьте параграфы, которые были добавлены или изменены в исходном файле.
+
+2. **Обновить перевод.**
+* Обновите исходные параграфы в комментариях локализованых файлов.
+* Обновите перевод в локализованных файлах согласно структуре исходных параграфов.
+
+<!-- @l10n:p
+## Workflow automation with MDLM
+
+Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+@l10n:p -->
+## Автоматизация рабочего процесса с помощью MDLM
+
+Рабочий процесс может быть частично автоматизирован с помощью [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+
+<!-- @l10n:p
+### Add new locale
+
+```sh
+$ mdlm ls # find locale name
+$ mdlm add fr # create new files, copy original file content, update headers.
+```
+Now files are created and ready for translation.
+@l10n:p -->
+### Добавить новую локаль
+
+```sh
+$ mdlm ls # найти имя локали
+$ mdlm add fr # создать новые файлы, скопириовать содержимое исходных файлов, обновить заголовки.
+```
+Теперь файлы созданы и готовы к переводу.
+
+<!-- @l10n:p
+### Update localized files
+
+```sh
+$ mdlm status --diff # check sync status and see the difference between original and localized files.
+```
+Based on the differences, for each localized file update orignal sections in comments and translation paragraphs.
+@l10n:p -->
+### Обновить локализованные файлы
+
+```sh
+$ mdlm status --diff # проверить состояние синхронизации и увидеть различия между исходным и локализованными файлами.
+```
+На основании различий, для каждого локализованного файла обновите исходные параграфы в комментариях и их переводы.
+
+<!-- @l10n:p
+## Example
+Example of original file with multiple locization:
+* [example/README.md](example/README.md)
+@l10n:p -->
+## Пример
+Пример исходного файла с несколькими локализациями:
+* [example/README.md](example/README.md)
+
+<!-- @l10n:p
+# Structure
 @l10n:p -->
 ## Структура
 
 <!-- @l10n:p
-### Localization Header
+## Localization Header
 
 `@l10n:h` Header serves as a switcher between all localizations of the file.
 
@@ -86,7 +186,7 @@ Example:
 ![Пример локализационного заголовка](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
 
 <!-- @l10n:p
-### Paragraphs
+## Paragraphs
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 
@@ -100,7 +200,7 @@ Localized document version `README-ru.md`:
 
 ![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
 @l10n:p -->
-### Параграфы
+## Параграфы
 
 Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `@l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
 
@@ -117,9 +217,9 @@ Each original document is logically split into paragraphs delimited by headers. 
 ![Пример локализационного параграфа - локализованный документ](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
 
 <!-- @l10n:p
-# Workflow
+# Operations
 @l10n:p -->
-# Рабочий процесс
+# Команды
 
 <!-- @l10n:p
 ## Add new Locale
@@ -150,11 +250,11 @@ Each original document is logically split into paragraphs delimited by headers. 
 <!-- @l10n:p
 ## Remove Locale
 
-* Remove Locale - remove all localized files for specific Locale
+* Remove Locale - remove all localized files for specific Locale and links from headers of other files
 @l10n:p -->
 ## Удалить Локаль
 
-* Удалить Локаль - удалить все локализованные файлы для заданной Локали
+* Удалить Локаль - удалить все локализованные файлы для заданной Локали и ссылки из заголовков других файлов.
 
 <!-- @l10n:p
 # Implementations
@@ -167,6 +267,7 @@ Each original document is logically split into paragraphs delimited by headers. 
 | Check Sync Status    | :heavy_check_mark:                                      |
 | Sync *               | :x:                                                     |
 | Update translation * | :x:                                                     |
+| Remove Locale        | :heavy_check_mark:                                      |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
 @l10n:p -->
@@ -203,6 +304,7 @@ All contributions are welcome:
 * Specification - proposals for updates and additions
 * Language tags and names - add language, update native name of the language
 * Localization of this document
+* Creating new automations (Python, JavaScript, etc.)
 @l10n:p -->
 # Содействие
 
@@ -210,3 +312,4 @@ All contributions are welcome:
 * Спецификация - предложения по обновлению и добавлению новых элементов
 * Тэги и названия языков - добавить язык, обновить название языка на этом языке
 * Локализация этого документа
+* Создание новый автоматизаци (Python, JavaScript, etc.)
