@@ -1,4 +1,4 @@
-name: l10n-sync
+name: l10n-sync-zh-Hans
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  sync-status:
+  sync-status-zh-Hans:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
     - name: Download mdlm
       run: curl -o- https://raw.githubusercontent.com/markdown-l10n/mdlm-sh/v0.0.7/install.sh | bash      
       
-    - name: Sync status
+    - name: Sync status - zh-Hans
       run: |
         export TERM=xterm-256color
-        $HOME/.mdlm/mdlm.sh status --diff
+        $HOME/.mdlm/mdlm.sh status zh-Hans --diff
