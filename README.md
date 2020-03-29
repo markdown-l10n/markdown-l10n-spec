@@ -75,6 +75,10 @@ Based on the differences, for each localized file update orignal sections in com
 Example of original file with multiple locization:
 * [example/README.md](example/README.md)
 
+## Managing worklfow with Github Projects
+
+It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+
 # Structure
 
 ## Localization Header
