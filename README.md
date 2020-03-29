@@ -1,9 +1,8 @@
 **[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 
-![l10n](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n/badge.svg)
+![l10n-sync](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync/badge.svg)
 
 # Markdown Localization - (Micro) Specification
-
 
 Introducing extension of the original markup format with annotations in comments in the form of `@namespace:annotation`, example: `@l10n:h`.
 

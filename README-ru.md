@@ -1,6 +1,6 @@
 [English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
 
-![l10n](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n/badge.svg)
+![l10n-sync-ru](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync-ru/badge.svg)
 
 <!-- @l10n:p
 # Markdown Localization - (Micro) Specification
