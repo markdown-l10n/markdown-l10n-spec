@@ -1,4 +1,4 @@
-**[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
+**[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-localization/markdown-localization-spec#workflow)* <!-- @l10n:h -->
 
 # Markdown Localization - (Micro) Specification
 
@@ -55,7 +55,7 @@ Create utility to:
 
 ## Workflow automation with MDLM
 
-Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-localization/mdlm-sh).
 
 ### Add new locale
 
@@ -78,7 +78,7 @@ Example of original file with multiple locization:
 
 ## Managing worklfow with Github Projects
 
-It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-localization/markdown-localization-spec/projects).
 
 # Structure
 
@@ -92,7 +92,7 @@ It may be helpful to introduce separate localization project for every localizat
 
 Example from [example/README.md](example/README-es.md):
 
-![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
+![Localization Header Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
 
 ## Paragraphs
 
@@ -100,17 +100,17 @@ Each original document is logically split into paragraphs delimited by headers. 
 
 Example of original document [example/README.md](example/README.md):
 
-![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-original.png)
+![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
 
 Localized document version [example/README-fr.md](example/README-fr.md):
 
-![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
+![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
 
 ## Ignore
 
 Use `@l10n:ignore` annotation to exclude content of original and localized documents from synchronization status check. Mark the beginning with `@l10n:ignore start` and the end with `@l10n:ignore end`. Example from [example/README-ru.md](example/README-ru.md):
 
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-ignore.png)
+![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
 
 # Operations
 
@@ -133,7 +133,7 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 
 # Implementations
 
-| Operation            | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
+| Operation            | [mdlm (Bash)](https://github.com/markdown-localization/mdlm-sh) |
 | -------------------- | :-----------------------------------------------------: |
 | List Locales         | :heavy_check_mark:                                      |
 | Add New Locale       | :heavy_check_mark:                                      |

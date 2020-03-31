@@ -1,7 +1,7 @@
-[English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-l10n/markdown-l10n-spec#workflow)* <!-- @l10n:h -->
+[English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-localization/markdown-localization-spec#workflow)* <!-- @l10n:h -->
 
 <!-- @l10n:ignore start -->
-![l10n-sync-ru](https://github.com/markdown-l10n/markdown-l10n-spec/workflows/l10n-sync-ru/badge.svg)
+![l10n-sync-ru](https://github.com/markdown-localization/markdown-localization-spec/workflows/l10n-sync-ru/badge.svg)
 <!-- @l10n:ignore end -->
 
 <!-- @l10n:p
@@ -119,11 +119,11 @@ Create utility to:
 <!-- @l10n:p
 ## Workflow automation with MDLM
 
-Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-localization/mdlm-sh).
 @l10n:p -->
 ## Автоматизация рабочего процесса с помощью MDLM
 
-Рабочий процесс может быть частично автоматизирован с помощью [mdlm-sh](https://github.com/markdown-l10n/mdlm-sh).
+Рабочий процесс может быть частично автоматизирован с помощью [mdlm-sh](https://github.com/markdown-localization/mdlm-sh).
 
 <!-- @l10n:p
 ### Add new locale
@@ -169,11 +169,11 @@ Example of original file with multiple locization:
 <!-- @l10n:p
 ## Managing worklfow with Github Projects
 
-It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+It may be helpful to introduce separate localization project for every localization. Examples [here](https://github.com/markdown-localization/markdown-localization-spec/projects).
 @l10n:p -->
 ## Управление рабочий процессом с помощью Github Projects
 
-Для каждой локализации можно создать отдельный проект. Например, как [здесь](https://github.com/markdown-l10n/markdown-l10n-spec/projects).
+Для каждой локализации можно создать отдельный проект. Например, как [здесь](https://github.com/markdown-localization/markdown-localization-spec/projects).
 
 <!-- @l10n:p
 # Structure
@@ -195,7 +195,7 @@ It may be helpful to introduce separate localization project for every localizat
 
 Example from [example/README.md](example/README-es.md):
 
-![Localization Header Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
+![Localization Header Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
 @l10n:p -->
 ### Заголовок
 
@@ -203,7 +203,7 @@ Example from [example/README.md](example/README-es.md):
 
 Пример из [example/README.md](example/README-es.md):
 
-![Пример локализационного заголовка](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-header.png)
+![Пример локализационного заголовка](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
 
 <!-- @l10n:p
 ## Paragraphs
@@ -212,11 +212,11 @@ Each original document is logically split into paragraphs delimited by headers. 
 
 Example of original document [example/README.md](example/README.md):
 
-![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-original.png)
+![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
 
 Localized document version [example/README-fr.md](example/README-fr.md):
 
-![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
+![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
 @l10n:p -->
 ## Параграфы
 
@@ -224,24 +224,24 @@ Localized document version [example/README-fr.md](example/README-fr.md):
 
 Пример исходного документы [example/README.md](example/README.md):
 
-![Пример локализационного параграфа - исходный документ](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-original.png)
+![Пример локализационного параграфа - исходный документ](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
 
 Пример из локализованного документа [example/README-fr.md](example/README-fr.md):
 
-![Пример локализационного параграфа - локализованный документ](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-paragraph-localized.png)
+![Пример локализационного параграфа - локализованный документ](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
 
 <!-- @l10n:p
 ## Ignore
 
 Use `@l10n:ignore` annotation to exclude content of original and localized documents from synchronization status check. Mark the beginning with `@l10n:ignore start` and the end with `@l10n:ignore end`. Example from [example/README-ru.md](example/README-ru.md):
 
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-ignore.png)
+![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
 @l10n:p -->
 ## Исключения
 
 Используйте аннотацию `@l10n:ignore` для исключения локализации для содержимого исходных и локализовынных документов. Используется аннотацию `@l10n:ignore start` в начале и `@l10n:ignore end` в конце. Пример из [example/README-ru.md](example/README-ru.md):
 
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-l10n/markdown-l10n-spec/assets/example-ignore.png)
+![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
 
 <!-- @l10n:p
 # Operations
@@ -288,7 +288,7 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 <!-- @l10n:p
 # Implementations
 
-| Operation            | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
+| Operation            | [mdlm (Bash)](https://github.com/markdown-localization/mdlm-sh) |
 | -------------------- | :-----------------------------------------------------: |
 | List Locales         | :heavy_check_mark:                                      |
 | Add New Locale       | :heavy_check_mark:                                      |
@@ -303,7 +303,7 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 @l10n:p -->
 # Реализации
 
-| Действие                        | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
+| Действие                        | [mdlm (Bash)](https://github.com/markdown-localization/mdlm-sh) |
 | ------------------------------- | :-----------------------------------------------------: |
 | Список Локалей                  | :heavy_check_mark:                                      |
 | Добавить новую Локаль           | :heavy_check_mark:                                      |
