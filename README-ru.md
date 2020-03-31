@@ -264,13 +264,15 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 <!-- @l10n:p
 ## Sync Locale
 
-* Check Sync Status, optionally with list of differences
+* Check Sync Status
+* Get list of Sync differences
 * Sync commented paragraphs in localized documents with updated paragraphs from original document
 * Update translation
 @l10n:p -->
 ## Синхронизировать Локаль
 
-* Получить статус синхронизации, опционально включая список различий
+* Получить статус синхронизации
+* Получить список различий синхронизации
 * Синхронизировать закомментированные параграфы в локализованных документых с обновленными параграфами в оригинальном документе
 * Обновить перевод
 
@@ -291,7 +293,8 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 | List Locales         | :heavy_check_mark:                                      |
 | Add New Locale       | :heavy_check_mark:                                      |
 | Add translation *    | :x:                                                     |
-| Check Sync Status    | :heavy_check_mark:                                      |
+| Check Sync status    | :heavy_check_mark:                                      |
+| Get Sync diff        | :heavy_check_mark:                                      |
 | Sync *               | :x:                                                     |
 | Update translation * | :x:                                                     |
 | Remove Locale        | :heavy_check_mark:                                      |
@@ -300,14 +303,15 @@ Use `@l10n:ignore` annotation to exclude content of original and localized docum
 @l10n:p -->
 # Реализации
 
-| Действие                      | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
-| ----------------------------- | :-----------------------------------------------------: |
-| Список Локалей                | :heavy_check_mark:                                      |
-| Добавить новую Локаль         | :heavy_check_mark:                                      |
-| Добавить перевод *            | :x:                                                     |
-| Получить статус синхронизации | :heavy_check_mark:                                      |
-| Синхронизировать *            | :x:                                                     |
-| Обновить перевод *            | :x:                                                     |
+| Действие                        | [mdlm (Bash)](https://github.com/markdown-l10n/mdlm-sh) |
+| ------------------------------- | :-----------------------------------------------------: |
+| Список Локалей                  | :heavy_check_mark:                                      |
+| Добавить новую Локаль           | :heavy_check_mark:                                      |
+| Добавить перевод *              | :x:                                                     |
+| Получить статус синхронизации   | :heavy_check_mark:                                      |
+| Получить различия синхронизации | :heavy_check_mark:                                      |
+| Синхронизировать *              | :x:                                                     |
+| Обновить перевод *              | :x:                                                     |
 
 \* if this operation is not implemented, it is supposed to be performed manually.
 
