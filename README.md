@@ -141,5 +141,5 @@ Sources for [languages](languages.txt) and their native translations:
 All contributions are welcome:
 * Specification - proposals for updates and additions
 * Language tags and names - add language, update native name of the language
-* Localization of this document
+* Localization of this document. Guidelines and status in [LOCALIZATION.md](LOCALIZATION.md)
 * Creating new automations (Python, JavaScript, etc.)

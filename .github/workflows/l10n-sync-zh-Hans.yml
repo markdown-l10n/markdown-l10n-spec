@@ -18,4 +18,4 @@ jobs:
       
     - name: Sync status - zh-Hans
       run: |
-        $HOME/.mdlm/mdlm.sh status zh-Hans --diff
+        $HOME/.mdlm/mdlm.sh status zh-Hans

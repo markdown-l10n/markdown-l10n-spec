@@ -18,4 +18,4 @@ jobs:
 
     - name: Sync status - es
       run: |
-        $HOME/.mdlm/mdlm.sh status es --diff
+        $HOME/.mdlm/mdlm.sh status es
