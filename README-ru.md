@@ -16,6 +16,7 @@ l10n:p -->
 <!-- l10n:p
 # Structure
 
+All elements are in HTML comments.
 * `l10n:select` - a switcher between all localizations of the file.
 * `l10n:p` - splits document into localizable paragraphs. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation.
 * `l10n:ignore` - excludes elements of content from original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`.
@@ -24,6 +25,7 @@ Example that includes all of these sections: [README-ru.md](https://raw.githubus
 l10n:p -->
 # Структура
 
+Все элементы помещаются внутрь HTML комментариев.
 * `l10n:select` - переключатель между всеми доступными локализациям файла.
 * `l10n:p` - разбивает файл на параграфы на основе заголовков. Все локализованные файлы включают в себя копию исходного документа, разбитого на параграфы, заключенные в комментарии и отмеченные `l10n:p` аннотацией.
 * `l10n:ignore` - исключает локализацию элементов содержимого исходных и локализовынных документов. Используйте аннотацию `l10n:ignore start` в начале и `l10n:ignore end` в конце.
