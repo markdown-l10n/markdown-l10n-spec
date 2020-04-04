@@ -6,31 +6,29 @@
 
 <!-- l10n:p
 # Markdown Localization - (Micro) Specification
+
+Provides a structure and approach to localize Markdown files.
 l10n:p -->
 # Локализация Markdown - (Микро) Спецификация
 
+Данная спецификация описывает структуру и подход для локализации Markdown файлов.
+
 <!-- l10n:p
-## Objective
+# Structure
 
-Enhance Markdown format:
-* introduce language switching header
-* split document into paragraphs based on markup headers
+* `l10n:select` - a switcher between all localizations of the file.
+* `l10n:p` - splits document into localizable paragraphs. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation.
+* `l10n:ignore` - excludes elements of content from original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`.
 
-Create utility to:
-* generate stubs for a new locale
-* create references between original and localized document
-* show the difference between original and localized document
+Example that includes all of these sections: [README-ru.md](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/master/README-ru.md)
 l10n:p -->
-## Задача
+# Структура
 
-Расширить формат Markdown:
-* ввести заголовок переключения языка
-* разбить документ на параграфы на основе заголовков разметки
+* `l10n:select` - переключатель между всеми доступными локализациям файла.
+* `l10n:p` - разбивает файл на параграфы на основе заголовков. Все локализованные файлы включают в себя копию исходного документа, разбитого на параграфы, заключенные в комментарии и отмеченные `l10n:p` аннотацией.
+* `l10n:ignore` - исключает локализацию элементов содержимого исходных и локализовынных документов. Используйте аннотацию `l10n:ignore start` в начале и `l10n:ignore end` в конце.
 
-Создать утилиту для:
-* создать заглушки для новой локали
-* создать ссылки между оригинальным и локализованным документом
-* показать разницу между оригинальным и локализованным документом
+Пример со использованием всех элементов: [README-ru.md](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/master/README-ru.md)
 
 <!-- l10n:p
 # Workflow
@@ -140,74 +138,6 @@ l10n:p -->
 ## Пример
 Пример исходного файла с несколькими локализациями:
 * [example/README.md](example/README.md)
-
-<!-- l10n:p
-# Structure
-
-- [Select Language Header](#select-language-header)
-- [Paragraphs](#paragraphs)
-- [Ignore](#ignore)
-l10n:p -->
-## Структура
-
-- [Выбор языка](#заголовок)
-- [Параграфы](#параграфы)
-- [Исключения](#исключения)
-
-<!-- l10n:p
-## Select Language Header
-
-`l10n:select` Header serves as a switcher between all localizations of the file.
-
-Example from [example/README.md](example/README-es.md):
-
-![Localization Header Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
-l10n:p -->
-### Заголовок
-
-Заголовок `l10n:select` используется как переключатель между всеми доступными локализациям файла.
-
-Пример из [example/README.md](example/README-es.md):
-
-![Пример локализационного заголовка](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
-
-<!-- l10n:p
-## Paragraphs
-
-Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
-
-Example of original document [example/README.md](example/README.md):
-
-![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
-
-Localized document version [example/README-fr.md](example/README-fr.md):
-
-![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
-l10n:p -->
-## Параграфы
-
-Каждый исходный документ логически разбит на параграфы на основе заголовков. Все локализованные файлы включают в себя копию исходного документа, разбитого на параграфы, заключенные в комментарии и отмеченные `l10n:p` аннотацией. Эта аннотация добавления в начале и конце комментария.
-
-Пример исходного документы [example/README.md](example/README.md):
-
-![Пример локализационного параграфа - исходный документ](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
-
-Пример из локализованного документа [example/README-fr.md](example/README-fr.md):
-
-![Пример локализационного параграфа - локализованный документ](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
-
-<!-- l10n:p
-## Ignore
-
-Use `l10n:ignore` annotation to exclude content of original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`. Example from [example/README-ru.md](example/README-ru.md):
-
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
-l10n:p -->
-## Исключения
-
-Используйте аннотацию `l10n:ignore` для исключения локализации для содержимого исходных и локализовынных документов. Используется аннотацию `l10n:ignore start` в начале и `l10n:ignore end` в конце. Пример из [example/README-ru.md](example/README-ru.md):
-
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
 
 <!-- l10n:p
 # Operations

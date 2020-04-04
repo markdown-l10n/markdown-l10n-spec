@@ -2,16 +2,15 @@
 
 # Markdown Localization - (Micro) Specification
 
-## Objective
+Provides a structure and approach to localize Markdown files.
 
-Enhance Markdown format:
-* introduce language switching header
-* split document into paragraphs based on markup headers
+# Structure
 
-Create utility to:
-* generate stubs for a new locale
-* create references between original and localized document
-* show the difference between original and localized document
+* `l10n:select` - a switcher between all localizations of the file.
+* `l10n:p` - splits document into localizable paragraphs. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation.
+* `l10n:ignore` - excludes elements of content from original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`.
+
+Example that includes all of these sections: [README-ru.md](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/master/README-ru.md)
 
 # Workflow
 
@@ -63,38 +62,6 @@ Based on the differences, for each localized file update orignal sections in com
 ## Example
 Example of original file with multiple locization:
 * [example/README.md](example/README.md)
-
-# Structure
-
-- [Select Language Header](#select-language-header)
-- [Paragraphs](#paragraphs)
-- [Ignore](#ignore)
-
-## Select Language Header
-
-`l10n:select` Header serves as a switcher between all localizations of the file.
-
-Example from [example/README.md](example/README-es.md):
-
-![Localization Header Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-header.png)
-
-## Paragraphs
-
-Each original document is logically split into paragraphs delimited by headers. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation. This annotation is added to the start and end of the paragraph comment.
-
-Example of original document [example/README.md](example/README.md):
-
-![Localization Paragraph Example - original document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-original.png)
-
-Localized document version [example/README-fr.md](example/README-fr.md):
-
-![Localization Paragraph Example - localized document](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-paragraph-localized.png)
-
-## Ignore
-
-Use `l10n:ignore` annotation to exclude content of original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`. Example from [example/README-ru.md](example/README-ru.md):
-
-![Localization Ingore Example](https://raw.githubusercontent.com/markdown-localization/markdown-localization-spec/assets/example-ignore.png)
 
 # Operations
 
