@@ -6,6 +6,7 @@ Provides a structure and approach to localize Markdown files.
 
 # Structure
 
+All elements are in HTML comments.
 * `l10n:select` - a switcher between all localizations of the file.
 * `l10n:p` - splits document into localizable paragraphs. All localized files have a copy of original document split into paragraphs in comments and marked with a `l10n:p` annotation.
 * `l10n:ignore` - excludes elements of content from original and localized documents from synchronization status check. Mark the beginning with `l10n:ignore start` and the end with `l10n:ignore end`.
