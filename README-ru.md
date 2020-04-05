@@ -5,12 +5,12 @@
 <!-- l10n:ignore end -->
 
 <!-- l10n:p
-# Markdown Localization - (Micro) Specification
+# Markdown Localization (Micro) Specification
 
-Provides a structure and approach to localize Markdown files.
+Provides a structure and workflow to localize Markdown files.
 l10n:p -->
 
-# Локализация Markdown - (Микро) Спецификация
+# Локализация Markdown (Микро) Спецификация
 
 Данная спецификация описывает структуру и подход для локализации Markdown файлов.
 
@@ -41,7 +41,7 @@ l10n:p -->
 # Рабочий процесс
 
 <!-- l10n:p
-## Add new locale
+## Localize new files
 
 1. **Create new file.** 
 * Use the same name, as original file has.
@@ -59,7 +59,7 @@ l10n:p -->
 * Add translations as separate paragraphs to match the structure of original file.
 l10n:p -->
 
-## Добавление новой локали
+## Создание новых локализационных файлов
 
 1. **Создайте новый файл.**
 * Используйте имя файла такое же, как у исходного файла.
@@ -97,49 +97,74 @@ l10n:p -->
 * Обновите перевод в локализованных файлах согласно структуре исходных параграфов.
 
 <!-- l10n:p
-## Workflow automation with MDLM
+# Workflow automation with MDLM
 
 Workflow can be partially automated with [mdlm-sh](https://github.com/markdown-localization/mdlm-sh).
+
+```console
+$ mdlm search eo
+eo (Esperanto) - Esperanto
+ka (ქართული) - Georgian
+ty (Reo Mā`ohi) - Tahitian
+
+$ mdlm add eo
+Creating new localization files for locale - "eo (Esperanto) - Esperanto":
+Creating example/README-eo.md. Confirm? [Y/n]
+- Created.
+Creating README-eo.md. Confirm? [Y/n]
+- Created.
+Finished. Total files created: 2
+```
+
+Now files are created and ready for translation.
+
+Once original files are updated, check the synchronization difference between original file and localization files:
+
+```console
+$ mdlm diff es
+Localization status for - es (Español) - Spanish:
+- example/README-es.md (Español) - outdated.
+4c4,5
+< Here is an outdated text of example.
+---
+> Here is a text of example.
+>
+```
 l10n:p -->
 
 ## Автоматизация рабочего процесса с помощью MDLM
 
 Рабочий процесс может быть частично автоматизирован с помощью [mdlm-sh](https://github.com/markdown-localization/mdlm-sh).
 
-<!-- l10n:p
-### Add new locale
+```console
+$ mdlm search eo
+eo (Esperanto) - Esperanto
+ka (ქართული) - Georgian
+ty (Reo Mā`ohi) - Tahitian
 
-```sh
-$ mdlm ls # find locale name
-$ mdlm add fr # create new files, copy original file content, update headers.
+$ mdlm add eo
+Creating new localization files for locale - "eo (Esperanto) - Esperanto":
+Creating example/README-eo.md. Confirm? [Y/n]
+- Created.
+Creating README-eo.md. Confirm? [Y/n]
+- Created.
+Finished. Total files created: 2
 ```
-Now files are created and ready for translation.
-l10n:p -->
 
-### Добавить новую локаль
-
-```sh
-$ mdlm ls # найти имя локали
-$ mdlm add fr # создать новые файлы, скопириовать содержимое исходных файлов, обновить заголовки.
-```
 Теперь файлы созданы и готовы к переводу.
 
-<!-- l10n:p
-### Update localized files
+После того, как исходные файлы будут обновлены, проверьте состояние синхронизации между исходным и локализованных файлами:
 
-```sh
-$ mdlm diff # check sync differences between original and localized files.
+```console
+$ mdlm diff es
+Localization status for - es (Español) - Spanish:
+- example/README-es.md (Español) - outdated.
+4c4,5
+< Here is an outdated text of example.
+---
+> Here is a text of example.
+>
 ```
-Based on the differences, for each localized file update orignal sections in comments and translation paragraphs.
-l10n:p -->
-
-### Обновить локализованные файлы
-
-```sh
-$ mdlm diff # проверить состояние синхронизации и увидеть различия между исходным и локализованными файлами.
-```
-
-На основании различий, для каждого локализованного файла обновите исходные параграфы в комментариях и их переводы.
 
 <!-- l10n:p
 ## Example
@@ -150,83 +175,6 @@ l10n:p -->
 ## Пример
 Пример исходного файла с несколькими локализациями:
 * [example/README.md](example/README.md)
-
-<!-- l10n:p
-# Operations
-l10n:p -->
-
-# Команды
-
-<!-- l10n:p
-## Add new Locale
-
-* List Available Locales
-* Add New Locale - add localized version for all files and update headers to have links to these files
-* Add translation
-l10n:p -->
-
-## Добавить новую Локаль
-
-* Получить список всех Локалей
-* Добавить новую локализацию - добавить локализованные версии для всех файло и обновить заголовки со ссылками на эти файлы
-* Добавить перевод
-
-<!-- l10n:p
-## Sync Locale
-
-* Check Sync Status
-* Get list of Sync differences
-* Sync commented paragraphs in localized documents with updated paragraphs from original document
-* Update translation
-l10n:p -->
-
-## Синхронизировать Локаль
-
-* Получить статус синхронизации
-* Получить список различий синхронизации
-* Синхронизировать закомментированные параграфы в локализованных документых с обновленными параграфами в оригинальном документе
-* Обновить перевод
-
-<!-- l10n:p
-## Remove Locale
-
-* Remove Locale - remove all localized files for specific Locale and links from headers of other files
-l10n:p -->
-
-## Удалить Локаль
-
-* Удалить Локаль - удалить все локализованные файлы для заданной Локали и ссылки из заголовков других файлов.
-
-<!-- l10n:p
-# Implementations
-
-| Operation            | [mdlm (Bash)](https://github.com/markdown-localization/mdlm-sh) |
-| -------------------- | :-----------------------------------------------------: |
-| List Locales         | :heavy_check_mark:                                      |
-| Add New Locale       | :heavy_check_mark:                                      |
-| Add translation *    | :x:                                                     |
-| Check Sync status    | :heavy_check_mark:                                      |
-| Get Sync diff        | :heavy_check_mark:                                      |
-| Sync *               | :x:                                                     |
-| Update translation * | :x:                                                     |
-| Remove Locale        | :heavy_check_mark:                                      |
-
-\* if this operation is not implemented, it is supposed to be performed manually.
-l10n:p -->
-
-# Реализации
-
-| Действие                        | [mdlm (Bash)](https://github.com/markdown-localization/mdlm-sh) |
-| ------------------------------- | :-----------------------------------------------------: |
-| Список Локалей                  | :heavy_check_mark:                                      |
-| Добавить новую Локаль           | :heavy_check_mark:                                      |
-| Добавить перевод *              | :x:                                                     |
-| Получить статус синхронизации   | :heavy_check_mark:                                      |
-| Получить различия синхронизации | :heavy_check_mark:                                      |
-| Синхронизировать *              | :x:                                                     |
-| Обновить перевод *              | :x:                                                     |
-
-\* if this operation is not implemented, it is supposed to be performed manually.
 
 <!-- l10n:p
 # Credits
