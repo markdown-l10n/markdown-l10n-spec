@@ -1,4 +1,4 @@
-**[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-localization/markdown-localization-spec#workflow)* <!-- l10n:select -->
+**[English](README.md)** | [Русский](README-ru.md) | *[Add](https://github.com/markdown-localization/mdlm-spec#workflow)* <!-- l10n:select -->
 
 # Markdown Localization - (Micro) Specification
 
