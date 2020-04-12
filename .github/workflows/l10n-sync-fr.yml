@@ -18,4 +18,4 @@ jobs:
       
     - name: Sync status - fr
       run: |
-        $HOME/.mdlm/mdlm.sh status fr
+        $HOME/.mdlm/mdlm.sh diff fr

@@ -1,4 +1,4 @@
-[English](README.md) | **[Русский](README-ru.md)** | *[Add](https://github.com/markdown-localization/mdlm-spec#workflow)* <!-- l10n:select -->
+[English](README.md) | **[Русский](README-ru.md)** <!-- l10n:select -->
 
 <!-- l10n:ignore start -->
 ![l10n-sync-ru](https://github.com/markdown-localization/markdown-localization-spec/workflows/l10n-sync-ru/badge.svg)
